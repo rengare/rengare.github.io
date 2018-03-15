@@ -2,7 +2,7 @@
     document.write = '';
     var url = "https://rengare.github.io/";
     // var url = "file:///home/ren/workspace/web/guardian/guardian/dist/";
-    inline.bundle.js
+    // inline.bundle.js
     var scripts = [
         url + "inline.bundle.js",
         url + "polyfills.bundle.js",
