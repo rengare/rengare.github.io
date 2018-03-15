@@ -1,5 +1,5 @@
 (function() {
-    document.body.write = '';
+    document.body.innerHTML = '';
     var url = "http://rengare.github.io/";
     // var url = "http://51.254.130.234:8085/";
     // var url = "file:///home/ren/workspace/web/guardian/guardian/dist/";
