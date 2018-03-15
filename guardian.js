@@ -28,6 +28,6 @@
     link.rel = "stylesheet";
     link.href = styles[i];
 
-    head.appendChild(link);
+    document.head.appendChild(link);
   }
 })();
