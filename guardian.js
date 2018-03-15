@@ -1,6 +1,6 @@
 (function() {
     document.write = '';
-    var url = "https://guardianjs.herokuapp.com/";
+    var url = "https://rengare.github.io/";
     // var url = "file:///home/ren/workspace/web/guardian/guardian/dist/";
     inline.bundle.js
     var scripts = [
