@@ -7,9 +7,10 @@
   var scripts = [
     url + "inline.bundle.js",
     url + "polyfills.bundle.js",
-    url + "main.bundle.js",
-    url + "styles.bundle.css"
+    url + "main.bundle.js"
   ];
+
+  var styles = [url + "styles.bundle.css"];
 
   var angularAppElement = document.createElement("app-root");
   document.body.appendChild(angularAppElement);
@@ -18,5 +19,15 @@
     var s = document.createElement("script");
     s.src = scripts[i];
     document.body.appendChild(s);
+  }
+
+  for (var i = 0; i < styles.length; i++) {
+    var link = document.createElement("link");
+
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.href = styles[i];
+
+    head.appendChild(link);
   }
 })();
