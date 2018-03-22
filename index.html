@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+        section {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <img src="./img/type_script_log.png" alt="">
+                <h2>Typescript</h2>
+                <h2>Javascript, który się skaluje</h2>
+                <p>by Gracjan Górecki</p>
+            </section>
+
+            <section>
+                <h2>O mnie</h2>
+                mnie już znacie :P
+            </section>
+            <section>
+                <h2>Agenda</h2>
+                <ul>
+                    <li>trochę o JS</li>
+                    <li>typescript dlaczego?</li>
+                    <li>arsenał TS</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Javascript</h2>
+                <span style="color:#0ff30f">
+					<b>Zalety</b>
+					<br>
+					<ul>
+						<li>jest wszędzie</li>
+						<li>duża liczba bibliotek</li>
+						<li>język stron</li>
+					</ul>
+				</span>
+            </section>
+
+            <section>
+                <h2>Javascript</h2>
+                <span style="color:#f3500f">
+					<b>Wady</b>
+					<br>
+					<ul>
+						<li>dynamiczne typowanie</li>
+						<li>dużo błędów typu 'is undefined'</li>
+						<li>brak modularności</li>
+						<li>nieodporny na błędy</li>
+					</ul>
+				</span>
+            </section>
+
+            <section>
+                <h2>Javascript</h2>
+                <span style="color:#f3500f">
+					<b>Wady</b>
+					<br>
+                    <pre>
+                        <code>
+var i = 100;
+
+for(var i = 0; i< 2; i++){
+}
+
+console.log(i); // jaki będzie wynik?
+                        </code>
+                    </pre>
+				</span>
+            </section>
+
+            <section>
+                <h2>Javascript</h2>
+                <span style="color:#f3500f">
+					<b>Wady</b>
+					<br>
+                    <pre>
+                        <code>
+
+for(var i = 0; i< 2; i++){
+    var x = 100;
+}
+console.log(x); // co się stanie?
+
+{
+    console.log(y); // co z tym?
+    var y = 1;
+}
+
+console.log(y); // a tutaj?
+                        </code>
+                    </pre>
+				</span>
+            </section>
+
+            <section>
+                <h3>Typescript na ratunek!</h3>
+                <img height="250px" width="250px" src="./img/hero.png" alt="">
+            </section>
+
+            <section>
+                <h2>Typescript</h2>
+                <ul>
+                    <li>open source</li>
+                    <li>Microsoft</li>
+                    <li><a href="https://github.com/Microsoft/TypeScript">https://github.com/Microsoft/TypeScript</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> jak zacząć</h2>
+                <pre>
+					<code>
+> npm install -g typescript
+> tsc index.ts // >>>> index.js
+					</code>
+				</pre>
+            </section>
+
+            <section>
+                <h2>Typescript</h2>
+                <ul>
+                    <li>nadzbiór JS</li>
+                    <li>poprawny kod JS to poprawny Typescript</li>
+                    <li>"kompilowany" a raczej transpilowany do JS</li>
+                    <li>działa wszędzie tam gdzie JS</li>
+                </ul>
+            </section>
+
+			<section>
+				<h2>
+					Typescript: omówienie
+				</h2>
+			</section>
+
+            <section>
+                <h3>Typy proste w TS</h3>
+                <pre>
+				<code>
+let imie: string;
+let wiek: number;
+let czyDziała: boolean;
+let data: Date;
+let auta: string[];
+let akcesoria: string | string[];
+let wszystko: any; // jak JS
+				</code>
+			</pre>
+            </section>
+
+            <section>
+                <h3>Dlaczego typy?</h3>
+                <img width="900px" src="./img/why_types.png" alt="">
+            </section>
+
+            <section>
+                <h4>Arsenał TS</h4>
+                <img src="./img/type_script_tank.png" alt="">
+            </section>
+
+
+            <section>
+                <h4>Klasy</h4>
+                <pre>
+					<code>
+class Animal {
+
+	private _name: string;
+
+	public get name(): string {
+		return this._name;
+	}
+
+	public set name(v: string) {
+		this._name = v;
+	}
+
+	constructor(name: string) {
+		this.name = name;
+	}
+
+	makeSound(){
+		console.log(`${this.name} wydał dzwięk`);
+	}
+}
+let dog = new Animal('Reksio');
+dog.makeSound(); // Reksio wydał dzwięk
+					</code>
+				</pre>
+            </section>
+
+            <section>
+                <h4>Interfejsy</h4>
+                <pre>
+				<code>
+interface AnimalModel {
+	name: string;
+}
+
+interface IAnimal {
+	makeSound(): void;
+	getName(): string;
+}
+				</code>
+			</pre>
+            </section>
+
+            <section>
+                <h2>Interfejsy w akcji</h2>
+                <img src="./img/coding_time.jpg" alt="">
+            </section>
+
+            <section>
+                <h4>Enumy</h4>
+                <pre>
+				<code>
+enum Languages{
+	Typescript,
+	Javascript,
+	c_Sharp,
+	Java
+}
+
+let language = Languages.Typescript
+console.log(language); // 0
+language = Languages.Java
+console.log(language); // 3
+				</code>
+			</pre>
+            </section>
+
+            <section>
+                <h4>Generyki</h4>
+                <pre>
+					<code>
+class MyOwnGenericCollection< T >{
+		collection: T[];
+
+		add(item: T) {
+			this.collection.push(item);
+		}
+
+		get(): T[] {
+			return this.collection;
+		}
+	}
+					</code>
+				</pre>
+            </section>
+
+            <section>
+                <h2>Generyki w akcji</h2>
+                <img src="./img/coding_time.jpg" alt="">
+            </section>
+
+            <section>
+                <h2>Podsumowanie</h2>
+            </section>
+
+            <section>
+                <h2>Moja następna prezentacja</h2>
+                <ul>
+                    <li>może o RUST lang</li>
+                    <li>może lightning talk o łucznictwie</li>
+                    <li>może o ... </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Dziękuję za uwagę</h2>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }],
+            parallaxBackgroundImage: 'img/reveal-parallax-1.jpg',
+            parallaxBackgroundSize: '2580px 1080px',
+            parallaxBackgroundHorizontal: 30,
+            parallaxBackgroundVertical: 10
+        });
+    </script>
+</body>
+
+</html>
