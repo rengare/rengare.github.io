@@ -1,5 +1,5 @@
 class MyOwnGenericCollection<T>{
-    collection: T[];
+    collection: T[] = [];
 
     add(item: T) {
         this.collection.push(item);
@@ -11,8 +11,7 @@ class MyOwnGenericCollection<T>{
 }
 
 let collection = new MyOwnGenericCollection<string>();
-
 collection.add("1")
-collection.add(1);
 
+console.log(collection);
 // interface + abstract class

@@ -7,6 +7,6 @@ interface IAnimal {
     getName(): string;
 }
 
-class Animal2 {
+class Animal {
 
 }
