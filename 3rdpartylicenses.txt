@@ -10,6 +10,10 @@ angular-bootstrap-md@5.2.2
 MIT
 MIT
 
+@angular/http@5.2.8
+MIT
+MIT
+
 cache-loader@1.2.2
 MIT
 Copyright JS Foundation and other contributors
