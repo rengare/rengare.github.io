@@ -1,2 +1,2 @@
-user.sys_id,user.first_name,user.last_name,"user.email"
-1,"gracjan",gor,gor@gor.com
+"user.sys_id","user.first_name","user.last_name","user.email"
+"1","gracjan","gor","gor@gor.com"
