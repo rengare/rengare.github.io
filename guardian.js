@@ -5,9 +5,11 @@
   // var url = "file:///home/ren/workspace/web/guardian/guardian/dist/";
   // inline.bundle.js
   var scripts = [
-    url + "inline.bundle.js",
-    url + "polyfills.bundle.js",
-    url + "main.bundle.js"
+    url + "main.js",
+    url + "polyfills.js",
+    url + "runtime.js",
+    url + "styles.js",
+    url + "vendor.js"
   ];
 
   var styles = [url + "styles.bundle.css"];
