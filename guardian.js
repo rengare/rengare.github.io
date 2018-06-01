@@ -8,11 +8,11 @@
     url + "main.js",
     url + "polyfills.js",
     url + "runtime.js",
-    url + "styles.js",
-    url + "vendor.js"
   ];
 
-  var styles = [url + "styles.bundle.css"];
+  var styles = [
+    url + "styles.css"
+  ];
 
   var angularAppElement = document.createElement("app-root");
   document.body.appendChild(angularAppElement);
