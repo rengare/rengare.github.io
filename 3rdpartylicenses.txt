@@ -6,9 +6,9 @@ font-awesome@4.7.0
 (OFL-1.1 AND MIT)
 (OFL-1.1 AND MIT)
 
-core-js@2.5.7
+core-js@2.4.1
 MIT
-Copyright (c) 2014-2018 Denis Pushkarev
+Copyright (c) 2014-2016 Denis Pushkarev
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
