@@ -1,3 +1,2 @@
 number,"sys_id","priority","assigned_to.sys_id","dv_priority","incident_state","sys_created_on","sys_updated_on","category","assignment_group","short_description","problem_state"
-INC008933928,"8a0dcdf937c4a700524144e654990eb3","4 - Standard","",,"Open","21 Aug 2018 12:42:04","21 Aug 2018 12:42:07","Event","GL_SERVER WINDOWS","WARNING on uscp0711:
-  ""USCP0711 - Veeam VMware: vSphere Host Warning"" at 21.08.2018 12:40:28 CET",
+INC008918571,"ea122d883708a7842c0cf25b34990e48","3 - Medium","f370890a0f5017007b6183dce1050e35",,"In progress","16 Aug 2018 03:44:46","16 Aug 2018 12:15:31","Event","Enterprise Backup","chrv4086, [19:1253] [40:23], 8663868, Number of restarts has exceeded the maximum number allowed [10].",
