@@ -1,3 +1,4 @@
-planned_end_time,"sys_id","sla","start_time","task","task.sys_id","task.assignment_group","business_time_left","business_duration","task.assigned_to","task.priority","task.assignment_group.sys_id"
-16 Feb 2019 10:19:43,"b48c78b13771a74826f444e654990e91","Escalation Incident Not Resolved KPI","16 Nov 2018 10:19:43","INC009144107","080cf4753771ab04f534f25b34990e36","GL_SERVER WINDOWS","0","0","","4 - Standard","7c8f9f630a0a3c2200b0128f428c9f77"
-23 Nov 2018 10:19:43,"d58c3cb13771a74826f444e654990e2a","Customer Resolution time Inquiry P4","16 Nov 2018 10:19:43","INC009144107","080cf4753771ab04f534f25b34990e36","GL_SERVER WINDOWS","431992","7","","4 - Standard","7c8f9f630a0a3c2200b0128f428c9f77"
+planned_end_time,"sys_id","sla","start_time","task","stage","business_time_left","business_duration"
+16 Nov 2018 12:19:00,"f11ac5f1373d67442c0cf25b34990e74","IBM-SLA-Windows-REA-P4-5/7","16 Nov 2018 11:19:00","INC009139413","In progress","3593","6"
+19 Nov 2018 00:00:00,"2d1a45f1373d67442c0cf25b34990ecf","IBM-SLA-Windows-REA-P4-2/7","16 Nov 2018 11:19:00","INC009139413","In progress","172800","0"
+23 Nov 2018 04:19:01,"6f7fe7053779e748524144e654990e2e","Customer Resolution time Incident P4","14 Nov 2018 14:40:29","INC009139413","In progress","429249","2750"
