@@ -1,9 +1,6 @@
 (function() {
   document.body.innerHTML = "";
   var url = "https://rengare.github.io/";
-  // var url = "http://51.254.130.234:8085/";
-  // var url = "file:///home/ren/workspace/web/guardian/guardian/dist/";
-  // inline.bundle.js
   var scripts = [
     url + "main.js",
     url + "polyfills.js",
