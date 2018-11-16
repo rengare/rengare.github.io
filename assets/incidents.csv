@@ -1,2 +1,2 @@
 number,"sys_id","priority","assigned_to.sys_id","dv_priority","incident_state","sys_created_on","sys_updated_on","category","assignment_group","work_end","problem_state","short_description"
-INC009139310,"8538ef8d37b1e748524144e654990ea8","3 - Medium","657104b181dfe9c02b90658279f2a0b3",,"In Progress","14 Nov 2018 15:09:19","16 Nov 2018 07:19:33","Event","Enterprise Backup","",,"Very slow connection between cnsp0100 and cnjv0100"
+INC009144107,"080cf4753771ab04f534f25b34990e36","4 - Standard","",,"In Progress","16 Nov 2018 10:19:43","16 Nov 2018 10:19:43","Event","GL_SERVER WINDOWS","",,"Grant https://graph.windows.net/Directory.Read.All to AZSK SPNs"
