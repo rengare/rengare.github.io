@@ -1,2 +1,2 @@
 number,"sys_id","priority","assigned_to.sys_id","dv_priority","incident_state","sys_created_on","sys_updated_on","category","assignment_group","work_end","problem_state","short_description"
-INC009064375,"822f052637c16b089c9ef25b34990e24","4 - Standard","",,"Open","12 Oct 2018 13:49:35","12 Oct 2018 13:49:48","Event","Enterprise Backup","",,"Workflow Test"
+INC008974946,"7cf5b70b37542bc0f534f25b34990edc","3 - Medium","be6194dc0a0a8c0d004b3b8a11183ef9",,"In Progress","07 Sep 2018 08:28:12","07 Sep 2018 09:27:44","Event","Enterprise Backup","",,"vcenter, Not Applicable, 9075632, Not Applicable"
