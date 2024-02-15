@@ -2,5 +2,7 @@
 title = "About"
 
 [taxonomies]
-categories = ["Hello world"]
+categories = ["About"]
 +++
+
+Hi, my name is Gracjan and this is my blog
