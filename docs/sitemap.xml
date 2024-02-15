@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://rengare/github.io/</loc>
+        <loc>https://rengare.github.io/</loc>
     </url>
     <url>
-        <loc>https://rengare/github.io/about/</loc>
+        <loc>https://rengare.github.io/about/</loc>
     </url>
     <url>
-        <loc>https://rengare/github.io/categories/</loc>
+        <loc>https://rengare.github.io/categories/</loc>
     </url>
     <url>
-        <loc>https://rengare/github.io/categories/hello-world/</loc>
+        <loc>https://rengare.github.io/categories/hello-world/</loc>
     </url>
     <url>
-        <loc>https://rengare/github.io/page/1/</loc>
+        <loc>https://rengare.github.io/page/1/</loc>
     </url>
     <url>
-        <loc>https://rengare/github.io/tags/</loc>
+        <loc>https://rengare.github.io/tags/</loc>
     </url>
 </urlset>
