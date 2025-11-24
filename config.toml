@@ -1,8 +1,7 @@
 # The URL the site will be built for
-base_url = "https://rengare.github.com"
+base_url = "https://rengare.github.io"
 
 theme = "after-dark"
-paginate_by = 5
 
 taxonomies = [
     # You can enable/disable RSS
